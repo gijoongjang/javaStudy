@@ -41,21 +41,21 @@ public class BfsExample {
     }
 
     public static void main(String[] args) {
-        BfsExample bale = new BfsExample(8);
+        BfsExample be = new BfsExample(8);
 
-        bale.addNode(1,2);
-        bale.addNode(1,3);
-        bale.addNode(1,4);
-        bale.addNode(2,1);
-        bale.addNode(2,5);
-        bale.addNode(2,6);
-        bale.addNode(3,1);
-        bale.addNode(4,1);
-        bale.addNode(4,7);
-        bale.addNode(5,2);
-        bale.addNode(6,2);
-        bale.addNode(7,4);
+        be.addNode(1,2);
+        be.addNode(1,3);
+        be.addNode(1,4);
+        be.addNode(2,1);
+        be.addNode(2,5);
+        be.addNode(2,6);
+        be.addNode(3,1);
+        be.addNode(4,1);
+        be.addNode(4,7);
+        be.addNode(5,2);
+        be.addNode(6,2);
+        be.addNode(7,4);
 
-        bale.bfs(1);
+        be.bfs(1);
     }
 }
