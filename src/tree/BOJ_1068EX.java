@@ -21,7 +21,7 @@ public class BOJ_1068EX {
         }
 
         for(int node : childNode[start]) {
-            // 자식 노드가 하나일경우 또는 현재 노드가 삭제 노드일경우 => leaf노드
+            // 현재 노드가 삭제 노드일경우 => leaf노드
             if( ( childNode[start].size() == 1 ) && ( node == removeNode ) ){
                 leafCount++;
                 break;
