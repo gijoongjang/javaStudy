@@ -55,7 +55,7 @@ public class SingletonPatternTest {
         }
 
         for(int n : set) {
-            System.out.println("no : " + n + " ");
+            System.out.println("no : " + n);
         }
 
         System.out.printf("데이터 총 %s개", set.size());
