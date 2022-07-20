@@ -26,8 +26,8 @@ public class HashMapExample {
 
         System.out.println("------value------");
         Collection<String> values = map.values();
-        for(Object value : values) {
-            System.out.println("value : " + value.toString());
+        for(String value : values) {
+            System.out.println("value : " + value);
         }
 
         System.out.println("------key : value------");
