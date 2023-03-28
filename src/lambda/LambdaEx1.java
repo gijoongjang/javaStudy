@@ -2,6 +2,7 @@ package lambda;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class LambdaEx1 {
 
@@ -20,6 +21,19 @@ public class LambdaEx1 {
 
         public int getWeigh() {
             return weigh;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Apple apple = (Apple) o;
+            return weigh == apple.weigh && Objects.equals(color, apple.color);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(color, weigh);
         }
 
         public static boolean isGreenApple(Apple apple) {

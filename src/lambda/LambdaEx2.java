@@ -27,7 +27,7 @@ public class LambdaEx2 {
         @Override
         public boolean test(LambdaEx1.Apple apple) {
             return "red".equals(apple.getColor())
-                   && apple.getWeigh() > 150;
+                    && apple.getWeigh() > 150;
         }
     }
 
