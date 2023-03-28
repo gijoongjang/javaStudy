@@ -20,10 +20,6 @@ public class LambdaEx3 {
         return result;
     }
 
-    public static String isEquals(List<LambdaEx1.Apple> result1, List<LambdaEx1.Apple> result2) {
-        return result1.equals(result2) ? "같다" : "다르다";
-    }
-
     public static void main(String[] args) {
         List<LambdaEx1.Apple> apples = List.of(new LambdaEx1.Apple("red", 110)
                                                 , new LambdaEx1.Apple("green", 160)
@@ -40,7 +36,5 @@ public class LambdaEx3 {
         //람다 표현
         List<LambdaEx1.Apple> result2 =
                 filterApples(apples, (LambdaEx1.Apple apple) -> "red".equals(apple.getColor()));
-
-        System.out.println(isEquals(result1, result2));
     }
 }

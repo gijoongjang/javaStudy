@@ -23,19 +23,6 @@ public class LambdaEx1 {
             return weigh;
         }
 
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Apple apple = (Apple) o;
-            return weigh == apple.weigh && Objects.equals(color, apple.color);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(color, weigh);
-        }
-
         public static boolean isGreenApple(Apple apple) {
             return "green".equals(apple.getColor());
         }
